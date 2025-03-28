@@ -36,28 +36,43 @@ export default function Footer() {
             <h4 className="font-heading font-semibold text-lg mb-4">Top Destinations</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/destinations/dubai">
-                  <a className="text-gray-400 hover:text-white transition-colors">Dubai, UAE</a>
+                <Link 
+                  href="/destinations/dubai"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Dubai, UAE
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/thailand">
-                  <a className="text-gray-400 hover:text-white transition-colors">Thailand</a>
+                <Link 
+                  href="/destinations/thailand"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Thailand
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/singapore">
-                  <a className="text-gray-400 hover:text-white transition-colors">Singapore</a>
+                <Link 
+                  href="/destinations/singapore"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Singapore
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/vietnam">
-                  <a className="text-gray-400 hover:text-white transition-colors">Vietnam</a>
+                <Link 
+                  href="/destinations/vietnam"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Vietnam
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/indonesia">
-                  <a className="text-gray-400 hover:text-white transition-colors">Indonesia (Bali)</a>
+                <Link 
+                  href="/destinations/indonesia"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Indonesia (Bali)
                 </Link>
               </li>
             </ul>

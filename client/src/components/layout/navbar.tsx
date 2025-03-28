@@ -18,38 +18,42 @@ export default function Navbar() {
   return (
     <nav className="bg-white/90 backdrop-blur-sm fixed w-full z-50 shadow-sm">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link href="/">
-          <a className="text-primary font-heading font-bold text-2xl">TravelEase</a>
+        <Link href="/" className="text-primary font-heading font-bold text-2xl">
+          TravelEase
         </Link>
         
         <div className="hidden md:flex space-x-6 text-dark">
-          <Link href="/#destinations">
-            <a className={cn("hover:text-primary transition-colors", {
+          <Link 
+            href="/#destinations"
+            className={cn("hover:text-primary transition-colors", {
               "text-primary": isActive("/#destinations")
-            })}>
-              Destinations
-            </a>
+            })}
+          >
+            Destinations
           </Link>
-          <Link href="/itinerary-builder">
-            <a className={cn("hover:text-primary transition-colors", {
+          <Link 
+            href="/itinerary-builder"
+            className={cn("hover:text-primary transition-colors", {
               "text-primary": isActive("/itinerary-builder")
-            })}>
-              Itineraries
-            </a>
+            })}
+          >
+            Itineraries
           </Link>
-          <Link href="/#testimonials">
-            <a className={cn("hover:text-primary transition-colors", {
+          <Link 
+            href="/#testimonials"
+            className={cn("hover:text-primary transition-colors", {
               "text-primary": isActive("/#testimonials")
-            })}>
-              Testimonials
-            </a>
+            })}
+          >
+            Testimonials
           </Link>
-          <Link href="/#consultation">
-            <a className={cn("hover:text-primary transition-colors", {
+          <Link 
+            href="/#consultation"
+            className={cn("hover:text-primary transition-colors", {
               "text-primary": isActive("/#consultation")
-            })}>
-              Contact
-            </a>
+            })}
+          >
+            Contact
           </Link>
         </div>
         
@@ -77,45 +81,40 @@ export default function Navbar() {
         "hidden": !mobileMenuOpen
       })}>
         <div className="px-4 py-3 space-y-2">
-          <Link href="/#destinations">
-            <a 
-              className="block py-2 hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Destinations
-            </a>
+          <Link 
+            href="/#destinations"
+            className="block py-2 hover:text-primary transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Destinations
           </Link>
-          <Link href="/itinerary-builder">
-            <a 
-              className="block py-2 hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Itineraries
-            </a>
+          <Link 
+            href="/itinerary-builder"
+            className="block py-2 hover:text-primary transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Itineraries
           </Link>
-          <Link href="/#testimonials">
-            <a 
-              className="block py-2 hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Testimonials
-            </a>
+          <Link 
+            href="/#testimonials"
+            className="block py-2 hover:text-primary transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Testimonials
           </Link>
-          <Link href="/#consultation">
-            <a 
-              className="block py-2 hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Contact
-            </a>
+          <Link 
+            href="/#consultation"
+            className="block py-2 hover:text-primary transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Contact
           </Link>
-          <Link href="/consultation">
-            <a 
-              className="block bg-primary text-white py-2 px-4 rounded-md text-center mt-3"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Book Consultation
-            </a>
+          <Link 
+            href="/consultation"
+            className="block bg-primary text-white py-2 px-4 rounded-md text-center mt-3"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Book Consultation
           </Link>
         </div>
       </div>
