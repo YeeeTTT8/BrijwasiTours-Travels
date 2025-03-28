@@ -109,10 +109,11 @@ export default function HeroSection() {
           >
             Unforgettable Experiences in Dubai, Thailand, Singapore and More!
           </p>
-          <div className="animate-in slide-in-from-bottom delay-500 duration-1000">
+          <div className="animate-in slide-in-from-bottom delay-500 duration-1000 mt-4">
             <Link href="#destinations" className="inline-block">
               <Button 
-                className="bg-secondary hover:bg-secondary/90 text-white font-heading font-semibold py-4 px-10 rounded-md text-lg transition-all inline-block shadow-lg hover:shadow-xl hover:scale-105 group relative overflow-hidden"
+                className="bg-secondary hover:bg-secondary/90 text-white font-heading font-semibold py-5 px-12 rounded-md text-lg transition-all inline-block shadow-xl hover:shadow-2xl hover:scale-105 group relative overflow-hidden transform hover:-translate-y-1"
+                size="lg"
               >
                 <span className="relative z-10">Explore Now</span>
                 <span className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/80 to-secondary w-full h-full transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>

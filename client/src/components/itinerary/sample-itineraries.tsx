@@ -69,13 +69,14 @@ export function SampleItineraries({ itineraries }: SampleItinerariesProps) {
                   </span>
                 ))}
               </div>
-              <Link href={`/destinations/${getDestinationSlug(itinerary.destinationId)}`}>
-                <a className="text-primary font-semibold hover:text-accent transition-colors text-sm flex items-center">
-                  View Full Itinerary
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </a>
+              <Link 
+                href={`/destinations/${getDestinationSlug(itinerary.destinationId)}`}
+                className="text-primary font-semibold hover:text-accent transition-colors text-sm flex items-center"
+              >
+                View Full Itinerary
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
               </Link>
             </div>
           </div>

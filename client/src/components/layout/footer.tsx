@@ -386,12 +386,7 @@ export default function Footer() {
         </div>
       </div>
       
-      {/* Add shadow-glow class for the newsletter input */}
-      <style jsx global>{`
-        .shadow-glow {
-          box-shadow: 0 0 15px rgba(var(--primary), 0.3);
-        }
-      `}</style>
+      {/* Global styles are now in index.css */}
     </footer>
   );
 }
