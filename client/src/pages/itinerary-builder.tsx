@@ -21,11 +21,11 @@ export default function ItineraryBuilderPage() {
   // Filter itineraries based on form data
   const filteredItineraries = allItineraries && formData ? 
     allItineraries.filter((itinerary) => {
-      const destinationMatch = formData.destination === "" || 
+      const destinationMatch = formData.destination === "all" || 
         destinations?.find(d => d.id === itinerary.destinationId)?.slug === formData.destination;
       
-      const durationMatch = formData.duration === "" || itinerary.duration === formData.duration;
-      const budgetMatch = formData.budget === "" || itinerary.budgetLevel === formData.budget;
+      const durationMatch = formData.duration === "any" || itinerary.duration === formData.duration;
+      const budgetMatch = formData.budget === "any" || itinerary.budgetLevel === formData.budget;
       
       const stylesMatch = formData.travelStyles.length === 0 || 
         formData.travelStyles.some(style => itinerary.travelStyle.includes(style));

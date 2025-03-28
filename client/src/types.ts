@@ -41,8 +41,8 @@ export interface ConsultationRequest {
   additionalInfo?: string;
 }
 
-export type BudgetLevel = "Budget-friendly" | "Moderate" | "Luxury" | "Ultra-luxury";
-export type Duration = "3-4 days" | "5-7 days" | "8-10 days" | "10-14 days" | "14+ days";
+export type BudgetLevel = "Budget-friendly" | "Moderate" | "Luxury" | "Ultra-luxury" | "any";
+export type Duration = "3-4 days" | "5-7 days" | "8-10 days" | "10-14 days" | "14+ days" | "any";
 export type TravelStyle = "Adventure" | "Cultural" | "Relaxation" | "Food & Culinary" | "Shopping";
 
 export interface ItineraryFormData {

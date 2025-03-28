@@ -61,9 +61,9 @@ export function ItineraryForm({ destinations, onSubmit }: ItineraryFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      destination: "",
-      duration: "",
-      budget: "",
+      destination: "all",
+      duration: "any",
+      budget: "any",
       travelStyles: []
     },
   });
@@ -96,7 +96,7 @@ export function ItineraryForm({ destinations, onSubmit }: ItineraryFormProps) {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="">All Destinations</SelectItem>
+                  <SelectItem value="all">All Destinations</SelectItem>
                   {destinations.map((destination) => (
                     <SelectItem key={destination.id} value={destination.slug}>
                       {destination.name}
@@ -125,7 +125,7 @@ export function ItineraryForm({ destinations, onSubmit }: ItineraryFormProps) {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="">Any Duration</SelectItem>
+                  <SelectItem value="any">Any Duration</SelectItem>
                   {durations.map((duration) => (
                     <SelectItem key={duration} value={duration}>
                       {duration}
@@ -154,7 +154,7 @@ export function ItineraryForm({ destinations, onSubmit }: ItineraryFormProps) {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="">Any Budget</SelectItem>
+                  <SelectItem value="any">Any Budget</SelectItem>
                   {budgetLevels.map((budget) => (
                     <SelectItem key={budget} value={budget}>
                       {budget}
