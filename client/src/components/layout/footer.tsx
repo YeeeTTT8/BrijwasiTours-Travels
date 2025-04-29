@@ -57,7 +57,7 @@ export default function Footer() {
           <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
         </svg>
       ),
-      href: "#"
+      href: "https://www.facebook.com/brijwasitours/"
     },
     {
       name: "Instagram",
@@ -137,7 +137,7 @@ export default function Footer() {
                   d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" 
                 />
               </svg>
-              <h3 className="font-heading font-bold text-3xl">TravelEase</h3>
+              <h3 className="font-heading font-bold text-3xl">BrijwasiTours&Travels</h3>
             </div>
             
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -310,9 +310,8 @@ export default function Footer() {
                 </div>
                 <div className="pt-1">
                   <span className="block group-hover:text-white transition-colors">
-                    123 Travel Street, Suite 456<br/>
-                    New York, NY 10001<br/>
-                    United States
+                  Brijwasi Tours & Travels  
+                  P-54, CIT Rd Scheme 6M, Kadapara, Phool Bagan, Kankurgachi, Kolkata, West Bengal 700054
                   </span>
                 </div>
               </li>
@@ -323,7 +322,7 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <span className="group-hover:text-white transition-colors">+1 (555) 123-4567</span>
+                <span className="group-hover:text-white transition-colors">+91 9433228930</span>
               </li>
               
               <li className="flex items-center group">
@@ -332,7 +331,7 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span className="group-hover:text-white transition-colors">info@travelease.com</span>
+                <span className="group-hover:text-white transition-colors">info@BrijwasiTours.com</span>
               </li>
               
               <li className="flex items-center group">
@@ -342,8 +341,8 @@ export default function Footer() {
                   </svg>
                 </div>
                 <span className="group-hover:text-white transition-colors">
-                  Mon-Fri: 9:00 AM - 6:00 PM EST<br/>
-                  Sat: 10:00 AM - 4:00 PM EST
+                  Mon-Fri: 9:00 AM - 6:00 PM IST<br/>
+                  Sat: 10:00 AM - 4:00 PM IST
                 </span>
               </li>
             </ul>
@@ -354,14 +353,14 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-wrap justify-between items-center">
             <div className="w-full md:w-auto mb-4 md:mb-0">
-              <p className="text-gray-500 text-sm">&copy; {currentYear} TravelEase. All rights reserved.</p>
+              <p className="text-gray-500 text-sm">&copy; {currentYear} BrijwasiTours&Travels. All rights reserved.</p>
             </div>
             
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-500">
               <a href="#" className="hover:text-white transition-colors hover:underline">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors hover:underline">Terms of Service</a>
               <a href="#" className="hover:text-white transition-colors hover:underline">Cookie Policy</a>
-              <a href="#" className="hover:text-white transition-colors hover:underline">Sitemap</a>
+              <a href="https://maps.app.goo.gl/WLKpxydj5cLTJF9u5" className="hover:text-white transition-colors hover:underline">Sitemap</a>
             </div>
           </div>
           

@@ -71,8 +71,8 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
     >
       {/* Background design elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
           <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
             <defs>
@@ -105,7 +105,7 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
           isInView ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         )}>
           {/* Floating Card with Booking Form */}
-          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-10 relative z-10 overflow-hidden">
+          <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 relative z-10 overflow-hidden">
             {/* Card background pattern */}
             <div className="absolute top-0 right-0 -mt-20 -mr-20 w-64 h-64 bg-primary/5 rounded-full"></div>
             <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-64 h-64 bg-secondary/5 rounded-full"></div>
@@ -113,7 +113,7 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
             <h3 className="text-2xl font-semibold mb-6 relative z-10">Plan Your Perfect Vacation</h3>
             
             <form onSubmit={handleSubmit} className="relative z-10">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div>
                   <label htmlFor="destination" className="block text-sm font-medium text-gray-700 mb-1">
                     Where would you like to go?
@@ -123,7 +123,9 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
                       id="destination" 
                       value={destination} 
                       onChange={(e) => setDestination(e.target.value)}
-                      className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 bg-gray-50"
+                      className="block w-full rounded-md border-gray-300 py-3 px-4 pr-10 shadow-sm 
++      focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 
++      bg-white appearance-none"
                       required
                     >
                       <option value="">Select a destination</option>
@@ -148,7 +150,9 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
                     id="travelDate" 
                     value={travelDate} 
                     onChange={(e) => setTravelDate(e.target.value)}
-                    className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 bg-gray-50"
+                    className="block w-full rounded-md border-gray-300 py-3 px-4 pr-10 shadow-sm 
++      focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 
++      bg-white appearance-none"
                     min={new Date().toISOString().split('T')[0]}
                     required
                   />
@@ -163,7 +167,9 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
                       id="budget" 
                       value={budget} 
                       onChange={(e) => setBudget(e.target.value)}
-                      className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 bg-gray-50"
+                      className="block w-full rounded-md border-gray-300 py-3 px-4 pr-10 shadow-sm 
++      focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 
++      bg-white appearance-none"
                       required
                     >
                       <option value="">Select your budget</option>
@@ -188,7 +194,9 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
                       id="travelStyle" 
                       value={travelStyle} 
                       onChange={(e) => setTravelStyle(e.target.value)}
-                      className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 bg-gray-50"
+                      className="block w-full rounded-md border-gray-300 py-3 px-4 pr-10 shadow-sm 
++      focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 
++      bg-white appearance-none"
                       required
                     >
                       <option value="">Select your travel style</option>
@@ -205,7 +213,7 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
                 </div>
               </div>
               
-              <div className="mt-8 text-center">
+              <div className="mt-6 text-center">
                 <Button
                   type="submit"
                   className="bg-primary hover:bg-primary/90 text-white font-semibold py-4 px-10 rounded-md text-lg transition-all inline-flex items-center justify-center group relative overflow-hidden shadow-lg hover:shadow-xl"
@@ -244,7 +252,7 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
           isInView ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         )}>
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -254,7 +262,7 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
           </div>
           
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
               </svg>
@@ -264,7 +272,7 @@ export default function BookingCTA({ destinations }: BookingCTAProps) {
           </div>
           
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
               </svg>

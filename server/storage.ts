@@ -120,8 +120,8 @@ export class MemStorage implements IStorage {
       slug: "dubai",
       shortDescription: "Experience the ultimate luxury in this futuristic city where cutting-edge architecture meets traditional Arabian culture.",
       fullDescription: "Dubai is a city of superlatives, home to the world's tallest building, largest mall, and some of the most luxurious hotels on the planet. Experience the perfect blend of futuristic architecture, traditional souks, and breathtaking desert landscapes.",
-      mainImage: "https://images.unsplash.com/photo-1546412414-e1885e51cfa5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400",
-      bannerImage: "https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600",
+      mainImage: "https://cdn.discordapp.com/attachments/1362399938960691230/1366762368142544916/christoph-schulz-7tb-b37yHx4-unsplash.jpg?ex=68122025&is=6810cea5&hm=af6153fad16a0af5aa1493873250d7db76e64dc2d275f800aa28b907d44fa8ad&",
+      bannerImage: "https://cdn.discordapp.com/attachments/1362399938960691230/1366762595822075996/darcey-beau-q8D7WZc40eA-unsplash.jpg?ex=6812205c&is=6810cedc&hm=c5814c0f44e5f619e476cb7bc77fa535ecdbd8dee5be74ba04cdf84a29259290&",
       attractions: ["Burj Khalifa", "Palm Jumeirah", "Dubai Mall", "Desert Safari"],
       travelTips: ["Best time to visit: November to March", "Dress modestly in public places", "Taxis are the most convenient way to get around", "The weekend is Friday and Saturday"]
     };
@@ -180,8 +180,8 @@ export class MemStorage implements IStorage {
       slug: "uae",
       shortDescription: "Experience the perfect blend of modern luxury and traditional Arabian culture throughout the United Arab Emirates.",
       fullDescription: "The United Arab Emirates offers more than just Dubai. Explore Abu Dhabi's cultural attractions, Sharjah's heritage sites, the mountains of Ras Al Khaimah, and the beaches of Fujairah. Each emirate has its own unique character and attractions.",
-      mainImage: "https://images.unsplash.com/photo-1577411571638-78f63bbf1e8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400",
-      bannerImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600",
+      mainImage: "https://cdn.discordapp.com/attachments/1362399938960691230/1366763243930128495/daniel-olah-2lMK4dgqwFM-unsplash.jpg?ex=681220f6&is=6810cf76&hm=7700d3287b6a2293e3efc99b9f418594748af55b6adec66da50087d73d83cf72&",
+      bannerImage: "https://cdn.discordapp.com/attachments/1362399938960691230/1366763375572287528/nick-fewings-L4-TIH6FdR0-unsplash.jpg?ex=68122115&is=6810cf95&hm=3eb89122558d27368a04513d787160e1cdf29d2e26b3e98a8cf1d06bc1272f6a&",
       attractions: ["Abu Dhabi", "Sharjah", "Fujairah", "Ras Al Khaimah"],
       travelTips: ["Best time to visit: October to April", "Respect local customs", "Taxis and ride-sharing are common", "Alcohol is only served in licensed venues"]
     };
