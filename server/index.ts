@@ -73,7 +73,7 @@ app.use((req, res, next) => {
 
   server.listen({
     port,
-    host: "127.0.0.1", // Change from "0.0.0.0"
+    host: "0.0.0.0", // Change from "0.0.0.0"
     reusePort: false,
   }, () => {
     log(`serving on port ${port}`);
