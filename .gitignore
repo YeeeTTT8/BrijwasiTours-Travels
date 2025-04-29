@@ -10,5 +10,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 # OS files
-.DS_Storeserver/credentials.json
+.DS_Store
+server/credentials.json
 
